@@ -34,4 +34,29 @@ console.log(typeof(someRandomVariable));
 console.log(typeof outsideTemp);
 console.log(typeof myFunction);
 
+// -----------Memory-----------
+
+console.log("-----------Memory-----------");
+
+//Memry-> Stack (Primitive), Heap (Non-Primitive)
+//When you take reference from stack you don't get the original value but copied value
+//When you take reference from heap you don't get the copy, instead you get the original value
+
+let name1 = "name1"
+let name2 = name1
+name2 = "name2"
+
+console.log(name1);
+console.log(name2);
+
+let userOne = {
+    email: "shin86@gmail.com",
+    age: 17
+}
+
+let userTwo = userOne
+userTwo.email = "shinei@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
 
